@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Morning Tasks</title>
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/Demo.css">
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-wrapper blue">
+      <a href="#" class="brand-logo center">Morning Tasks</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h3 class="center-align">Morning Tasks Checklist</h3>
+
+    <!-- Task List -->
+    <ul class="collection">
+      <li class="collection-item">
+        <label>
+          <input type="checkbox" class="filled-in" id="task1" />
+          <span>Brush Teeth</span>
+        </label>
+      </li>
+      <li class="collection-item">
+        <label>
+          <input type="checkbox" class="filled-in" id="task2" />
+          <span>Eat Breakfast</span>
+        </label>
+      </li>
+      <li class="collection-item">
+        <label>
+          <input type="checkbox" class="filled-in" id="task3" />
+          <span>Get Dressed</span>
+        </label>
+      </li>
+      <!-- Add more tasks as needed -->
+    </ul>
+
+    <!-- Child Information Popup Trigger -->
+    <a class="waves-effect waves-light btn" onclick="openChildInfoPopup()">Add Child</a>
+
+    <!-- Clock -->
+    <div id="clock"></div>
+
+    <!-- Child Information Table -->
+    <table id="childInfoTable" class="striped">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Gender</th>
+        </tr>
+      </thead>
+      <tbody id="childInfoBody">
+        <!-- Child information will be added here dynamically -->
+      </tbody>
+    </table>
+  </div>
+
+    <!-- Materialize JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="Demo.js"></script>
+  
+
+    
+</body>
+
+</html>
